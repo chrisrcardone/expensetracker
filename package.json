@@ -42,6 +42,6 @@
   },
   "devDependencies": {
     "jest": "20.0.4",
-    "webpack-dev-server": "2.5.1"
+    "webpack-dev-server": "3.1.11"
   }
 }
