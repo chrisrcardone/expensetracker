@@ -5,6 +5,7 @@ import {editExpense, removeExpense} from '../actions/expenses';
 
 
 const EditExpensePage = (props) => {
+    console.log(props)
     return (
     <div>
         <h1>Edit Expense</h1>
@@ -15,8 +16,8 @@ const EditExpensePage = (props) => {
                 props.history.push('/');
               }}
         />
-        <button onClick={() => {
-            props.dispatch(removeExpense(props.expense));
+        <button onClick={(props) => {
+            props.dispatch(removeExpense(props.expense.id));
             props.history.push('/');
         }}>Remove Expense</button>
     </div>
